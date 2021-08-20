@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <title>Lazy Loading</title>
+</head>
+<body>
+    <main>
+        <section class="presentation">
+            <h1 class="title">Lazy Loading</h1>
+            <p class="definition text">
+                Lazy loading o carga diferida, es un patrón de diseño que consiste 
+                en retrasar la carga o inicialización de un objeto hasta el mismo 
+                momento de su utilización.
+            </p>
+            <p class="description text">
+                En esta página visualizarás un ejemplo en el cual al momento de la carga 
+                se agregarán al DOM multiples imagenes. Los nodos serán agregados inmediatamente
+                pero la carga de las imagenes sucederán a medida que hagas scroll y las mismas 
+                vayan apareciendo en pantalla. 
+            </p>
+        </section>
+        <section class="container">
+            <div class="images"></div>
+            <section class="counter">
+                <h3 class="counter__description text">
+                    Informe de carga 
+                </h3>
+                <div class="counter__report"></div>
+            </section>
+        </section>
+    </main>
+</body>
+</html>
