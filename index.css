@@ -16,21 +16,24 @@ body {
 }
 .text{
     margin: 2vh auto 0 auto;
-    width: 80%;
 }
 .title {
     text-align: center;
-    color: var(--title);
     font-size: 36px;
+    margin-bottom: 4vh;
+}
+.definition {
+    color: var(--title);
 }
 
 main {
     background-color: var(--b-main);
     margin: 2vh 15vw;
     border-radius: 1rem;
+    padding: 0 5vw;
 }
 .presentation {
-    padding: 3vh 0;
+    padding: 4vh 0;
 }
 .container {
     display: flex;
@@ -38,16 +41,40 @@ main {
 }
 .counter {
     position: sticky;
-    height: 50vh;
-    width: 40vw;
+    height: 70vh;
+    width: 25vw;
     background-color: var(--b-counter);
-    margin: 0.5rem;
     border-radius: 1rem;
-}
-.images {
-    width: 100%;
 }
 .counter__description {
     color: white;
     text-align: center;
+}
+.button {
+    width: 45%;
+    height: 2rem;
+    border: none;
+    margin: 0.3rem;
+}
+.button:hover {
+    cursor: pointer;
+    background-color: var(--title);
+}
+.add-image {
+    background-color: var(--b-page);
+    color: white;
+}
+.clear {
+    color: var(--b-page);
+}
+.section-images {
+    width: 35vw;
+}
+.image {
+    border-radius: 1rem;
+    width: 100%;
+}
+.container-image {
+    width: 33vw;
+    margin-bottom: 2vh;
 }
