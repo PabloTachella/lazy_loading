@@ -1,3 +1,5 @@
+import { registerImage } from './lazy.js'
+
 const min = 1
 const max = 122
 const random = () => Math.floor(Math.random() * max - min)
@@ -10,6 +12,7 @@ const createImageNode = () => {
 
     image.src = `https://randomfox.ca/images/${random()}.jpg`
     container.appendChild(image)
+    registerImage(image)
     
     return container
 }
