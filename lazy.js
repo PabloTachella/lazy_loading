@@ -1,16 +1,23 @@
+const counterUploadedImages = document.querySelector('.uploaded-images')
+let uploadedImages = 0
+
 const isIntersecting = entry => entry.isIntersecting
 
-const accion = (entry) =>  {
-    const node = entry.target
-    console.log('Hola')
+const loadImage = (entry) =>  {
+    const container = entry.target
+    const image = container.firstChild
+    image.src = image.dataset.src
 
-    observer.unobserve(node)
+    uploadedImages++
+    counterUploadedImages.innerHTML = uploadedImages
+
+    observer.unobserve(container)
 }
 
 const observer = new IntersectionObserver( (entries) => {
     entries
         .filter(isIntersecting)
-        .forEach(accion)
+        .forEach(loadImage)
 })
 
 export const registerImage = (image) => {

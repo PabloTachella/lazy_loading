@@ -1,5 +1,8 @@
 import { registerImage } from './lazy.js'
 
+const counterAddedImages = document.querySelector('.added-images')
+let addedImages = 0
+
 const min = 1
 const max = 122
 const random = () => Math.floor(Math.random() * max - min)
@@ -10,9 +13,9 @@ const createImageNode = () => {
     image.classList.add('image')
     container.classList.add('container-image')
 
-    image.src = `https://randomfox.ca/images/${random()}.jpg`
+    image.dataset.src = `https://randomfox.ca/images/${random()}.jpg`
     container.appendChild(image)
-    registerImage(image)
+    registerImage(container)
     
     return container
 }
@@ -20,6 +23,9 @@ const createImageNode = () => {
 const addImage = () => {
     const image = createImageNode()
     images.appendChild(image)
+
+    addedImages++
+    counterAddedImages.innerHTML = addedImages
 }
 const clearImages = () => {
     [...images.childNodes].forEach(child => {

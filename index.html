@@ -17,23 +17,32 @@
                 momento de su utilización.
             </p>
             <p class="description text">
-                En esta página visualizarás un ejemplo en el cual al momento de la carga 
-                se agregarán al DOM multiples imagenes. Los nodos serán agregados inmediatamente
-                pero la carga de las imagenes sucederán a medida que hagas scroll y las mismas 
-                vayan apareciendo en pantalla. 
+                En esta página visualizarás un ejemplo en el cual podrás agregar nodos al DOM 
+                mediante un botón. Los nodos se añadirán inmediatamente y contendrán una 
+                imagen en principio sin cuerpo, la carga de las imagenes sucederán a medida 
+                que hagas scroll y las mismas vayan apareciendo en pantalla. 
             </p>
         </section>
         <section class="container">
             <div class="section-images">
-                <button class="add-image button">Agregar imagen</button>
-                <button class="clear button">Limpiar</button>
+                <div class="buttons">
+                    <button class="add-image button">Agregar imagen</button>
+                    <button class="clear button">Limpiar</button>
+                </div>
                 <div class="images"></div>
             </div>
-            <section class="counter">
-                <h3 class="counter__description text">
-                    Informe de carga 
-                </h3>
-                <div class="counter__report"></div>
+            <section class="report">
+                <div class="report__header">
+                    <h3 class="report__description text">
+                        Informe de carga 
+                    </h3>
+                </div>
+                <div class="counter__report">
+                    <h4 class="report-text">Imagenes añadidas</h4>
+                    <div class="counter added-images">0</div>
+                    <h4 class="report-text">Imagenes cargadas</h4>
+                    <div class="counter uploaded-images">0</div>
+                </div>
             </section>
         </section>
     </main>

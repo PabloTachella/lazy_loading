@@ -30,31 +30,26 @@ main {
     background-color: var(--b-main);
     margin: 2vh 15vw;
     border-radius: 1rem;
-    padding: 0 5vw;
+    padding: 0 5vw 5vh;
 }
 .presentation {
     padding: 4vh 0;
 }
+
 .container {
     display: flex;
     justify-content: center;
 }
-.counter {
-    position: sticky;
-    height: 70vh;
-    width: 25vw;
-    background-color: var(--b-counter);
-    border-radius: 1rem;
-}
-.counter__description {
-    color: white;
-    text-align: center;
+
+.buttons {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 2vh;
 }
 .button {
     width: 45%;
     height: 2rem;
     border: none;
-    margin: 0.3rem;
 }
 .button:hover {
     cursor: pointer;
@@ -67,14 +62,70 @@ main {
 .clear {
     color: var(--b-page);
 }
+
 .section-images {
-    width: 35vw;
+    width: 33vw;
+    margin-right: 2vw;
+}
+.container-image {
+    min-height: 20vw;
+    background-color: var(--title);
+    border-radius: 1rem;
+    margin-bottom: 2vh;
 }
 .image {
     border-radius: 1rem;
     width: 100%;
 }
-.container-image {
-    width: 33vw;
-    margin-bottom: 2vh;
+
+.report {
+    position: sticky;
+    top: 5vh;
+    height: 90vh;
+    width: 25vw;
+    background-color: var(--b-counter);
+    border-radius: 1rem;
+}
+.report__header {
+    position: absolute;
+    width: 100%;
+    height: 2.5rem;
+    background-color: var(--b-counter-top);
+    border-radius: 1rem 1rem 0 0;
+}
+.report__description {
+    color: white;
+    text-align: center;
+    margin-top: 0.5rem;
+}
+.counter__report {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    color: white;
+    text-align: center;
+}
+.report-text {
+    font-size: 1.5rem;
+}
+.counter {
+    font-size: 3rem;
+    margin-bottom: 3rem;
+}
+
+@media (max-width: 800px) {
+    .report {
+        display: none;
+    }
+    .section-images {
+        width: 100%;
+    }
+}
+
+@media (max-width: 500px) {
+    main {
+        margin: 5vh 1vw;
+    }
 }
