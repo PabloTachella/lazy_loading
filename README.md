@@ -9,8 +9,8 @@ aparezca en el viewport al hacer scroll. [ver ->](https://pablotachella.github.i
 ## Contenido
 
 - [Screenshot](#screenshot)
-- [Construcción del proyecto](#construccion-del-proyecto)
-- [Que aprendí](#que-aprendi)
+- [Construcción del proyecto](#construcción-del-proyecto)
+- [Que aprendí](#que-aprendí)
 - [Autor](#autor)
 
 ## Screenshot
