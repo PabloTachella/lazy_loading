@@ -2,18 +2,18 @@
 
 Bienvenid@! a continuación trabajaremos el Lazy loading o carga diferida. Lazy Loading es un patrón de diseño que consiste en retrasar la carga o inicialización de un objeto hasta el mismo momento de su utilización.
 
-En esta [Landing Page] (https://pablotachella.github.io/lazy_loading/) podrás, mediante un botón, 
+En esta [Landing Page](https://pablotachella.github.io/lazy_loading/) podrás, mediante un botón, 
 añadir nodos al DOM. Dichos nodos se agregaran inmediatamente, pero su contenido solo se cargará cuando el nodo 
-aparezca en el viewport al hacer scroll. [ver ->] (https://pablotachella.github.io/lazy_loading/)
+aparezca en el viewport al hacer scroll. [ver ->](https://pablotachella.github.io/lazy_loading/)
 
 ## Contenido
 
-- [Screenshot] (#screenshot)
-- [Construcción del proyecto] (#construccion-del-proyecto)
-- [Que aprendí] (#que-aprendi)
-- [Autor] (#autor)
+- [Screenshot](#screenshot)
+- [Construcción del proyecto](#construccion-del-proyecto)
+- [Que aprendí](#que-aprendi)
+- [Autor](#autor)
 
-##screenshot
+## Screenshot
 
 
 ![](./screenshot-lazy.jpg)
@@ -21,7 +21,7 @@ aparezca en el viewport al hacer scroll. [ver ->] (https://pablotachella.github.
 ## Construcción del proyecto
 
 - Maquetado y estilizado con HTML y CSS, diseño responsive
-- Imagenes consumidas de la API [https://randomfox.ca/] (https://randomfox.ca/)
+- Imagenes consumidas de la API [https://randomfox.ca/](https://randomfox.ca/)
 - Manipulación del DOM con JS, inserción y eliminación de nodos, observación del viewport con IntersectionObserver
 
 ## Que aprendí
