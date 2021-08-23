@@ -1,5 +1,7 @@
+import Counter from './Counter.js'
+
 const counterUploadedImages = document.querySelector('.uploaded-images')
-let uploadedImages = 0
+let uploadedImages
 
 const isIntersecting = entry => entry.isIntersecting
 
@@ -8,8 +10,10 @@ const loadImage = (entry) =>  {
     const image = container.firstChild
     image.src = image.dataset.src
 
+    uploadedImages = Counter.getUploadedImages
     uploadedImages++
     counterUploadedImages.innerHTML = uploadedImages
+    Counter.setUploadedImages = uploadedImages
 
     observer.unobserve(container)
 }
