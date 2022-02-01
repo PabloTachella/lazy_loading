@@ -9,42 +9,46 @@
 </head>
 <body>
     <main>
-        <section class="presentation">
-            <h1 class="title">Lazy Loading</h1>
-            <p class="definition text">
+        <section class="b-presentation">
+            <h1 class="b-presentation--title">Lazy Loading</h1>
+            <p class="b-presentation_definition b-presentation--text">
                 Lazy loading o carga diferida, es un patrón de diseño que consiste 
                 en retrasar la carga o inicialización de un objeto hasta el mismo 
                 momento de su utilización.
             </p>
-            <p class="description text">
+            <p class="b-presentation_description b-presentation--text">
                 En esta página visualizarás un ejemplo en el cual podrás agregar nodos al DOM 
                 mediante un botón. Los nodos se añadirán inmediatamente y contendrán una 
                 imagen en principio sin cuerpo, la carga de las imagenes sucederán a medida 
                 que hagas scroll y las mismas vayan apareciendo en pantalla. 
             </p>
         </section>
-        <section class="container">
-            <div class="section-images">
-                <div class="buttons">
-                    <button class="add-image button">Agregar imagen</button>
-                    <button class="clear button">Limpiar</button>
-                </div>
-                <div class="images"></div>
+        <section class="b-report">
+            <div class="b-report--header">
+                <h3 class="b-report--title">
+                    Informe de carga 
+                </h3>
             </div>
-            <section class="report">
-                <div class="report__header">
-                    <h3 class="report__description text">
-                        Informe de carga 
-                    </h3>
+            <div class="b-report--counter">
+                <div class="b-counter--text">
+                    <h4 class="b-counter--text_added">Añadidas:</h4>
+                    <div class="b-counter--added-images counter">0</div>
                 </div>
-                <div class="counter__report">
-                    <h4 class="report-text">Imagenes añadidas</h4>
-                    <div class="counter added-images">0</div>
-                    <h4 class="report-text">Imagenes cargadas</h4>
-                    <div class="counter uploaded-images">0</div>
+                <div class="b-counter--text">
+                    <h4 class="b-counter--text_loaded">Cargadas:</h4>
+                    <div class="b-counter--loaded-images counter">0</div>
                 </div>
-            </section>
+            </div>
         </section>
+        <div class="b-lazy-loading--contatiner">
+            <div class="b-images">
+                <div class="b-images--buttons">
+                    <button class="add-image b-images--button">Agregar imagen</button>
+                    <button class="clear b-images--button">Limpiar</button>
+                </div>
+                <section class="b-images--container"></section>
+            </div>
+        </div>
     </main>
 </body>
 <script type="module" src="./index.js"></script>

@@ -16,7 +16,7 @@ aparezca en el viewport al hacer scroll. [ver ->](https://pablotachella.github.i
 ## Screenshot
 
 
-![](./screenshot-lazy.jpg)
+![](./lazy-loading.png)
 
 ## Construcción del proyecto
 

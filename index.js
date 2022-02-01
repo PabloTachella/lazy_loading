@@ -1,13 +1,13 @@
-import { registerImage } from './lazy.js'
-import Counter from './Counter.js'
+import { registerImage } from './utils/lazy.js'
+import Counter from './utils/Counter.js'
 
-const counterAddedImages = document.querySelector('.added-images')
-const counterUploadedImages = document.querySelector('.uploaded-images')
+const counterAddedImages = document.querySelector('.b-counter--added-images')
+const counterUploadedImages = document.querySelector('.b-counter--loaded-images')
 let addedImages
 
 const min = 1
 const max = 122
-const random = () => Math.floor(Math.random() * max - min)
+const random = () => Math.floor(Math.random() * max + min)
 
 const createImageNode = () => {
     const image = document.createElement('img')
@@ -23,6 +23,8 @@ const createImageNode = () => {
 }
 
 const addImage = () => {
+    add.style = 'animation: none'
+
     const image = createImageNode()
     images.appendChild(image)
 
@@ -44,7 +46,7 @@ const clearImages = () => {
     Counter.setAddedImages = 0
 }
 
-const images = document.querySelector('.images')
+const images = document.querySelector('.b-images--container')
 const add = document.querySelector('.add-image')
 const clear = document.querySelector('.clear')
 

@@ -1,6 +1,6 @@
 import Counter from './Counter.js'
 
-const counterUploadedImages = document.querySelector('.uploaded-images')
+const counterUploadedImages = document.querySelector('.b-counter--loaded-images')
 let uploadedImages
 
 const isIntersecting = entry => entry.isIntersecting
